@@ -1,0 +1,25 @@
+h1{
+  text-align: center;
+}
+
+.title{
+  padding-top: 0.25em;
+  margin-left:2em;
+  text-transform: capitalize;
+}
+
+.blog-post{
+  border-bottom: 1px solid black;
+}
+.blog-post:hover{
+  background-color: grey;
+}
+
+.post{
+  margin-left:2em;
+}
+
+.date{
+  margin-left: 2em;
+}
+

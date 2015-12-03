@@ -1,0 +1,11 @@
+
+  <h1>Blog</h1>
+  <div class="blog">
+    <div ng-controller="BlogController">
+      <div class="blog-post" ng-repeat="blog in blogs">
+        <p class="title"><a href="#/post{{blog.id}}">{{blog.title}}</a></p>
+        <p class="post">{{blog.post}}</p>
+        <p class="date">{{blog.date}}</p>
+      </div>
+    </div>
+  </div>
