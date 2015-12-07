@@ -4,4 +4,8 @@ module.exports = function(app) {
     res.sendFile('./public/index.html]');
   });
 
+  app.post('/',function(req,res){
+    console.log(req);
+  })
+
 };
