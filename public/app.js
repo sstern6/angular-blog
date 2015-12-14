@@ -10,8 +10,7 @@ var blog = angular.module('blog',['ngRoute'])
         date:'12/1/15'}
       ],
       $scope.addNewComment = function(){
-          commentService.addComment($scope.comment.text)
-
+          commentService.addComment($scope.comment)
       }
     };
 
@@ -34,18 +33,18 @@ var blog = angular.module('blog',['ngRoute'])
 
     blog.service('commentService',function($http,$q){
 
+      var addComment = function(comment){
+        $http({
+          method:"post",
+          url:'/',
+          data:{"comment":comment}
+        })
+
+      }
+
       return({
         addComment:addComment
       });
-
-      function addComment(comment){
-        var request = $http({
-          method:"post",
-          url:'/',
-          data:comment
-        });
-      }
-
 
     })
 

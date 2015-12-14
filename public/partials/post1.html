@@ -15,8 +15,11 @@
       </code>
     </div>
 
-    <formmethod="post">
-      <input type="text" name="comment_name" ng-model="comment.text" placeholder="comment">
-      <input type="text" name="user_name" ng-model="comment.user" placeholder="Your Name">
+    <form id="post1" method="post">
+      <input type="text" name="comment_name" ng-model="comment" placeholder="comment">
+      <input type="text" name="user_name" ng-model="name" placeholder="Your Name">
       <button ng-click="addNewComment()">Post</button>
     </form>
+
+    <!-- ng-model="comment.text" -->
+    <!-- ng-model="comment.user" -->
