@@ -1,7 +1,5 @@
 var blog = angular.module('blog',['ngRoute'])
 
-
-
     function BlogController($scope,commentService){
       $scope.blogs =  [
         {id:1,
@@ -38,6 +36,10 @@ var blog = angular.module('blog',['ngRoute'])
           method:"post",
           url:'/',
           data:{"comment":comment}
+        })
+
+        .then(function(){
+
         })
 
       }
