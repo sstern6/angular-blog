@@ -9,10 +9,23 @@ h1{
 }
 
 .blog-post{
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #D3D3D3;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  width:70%;
+  margin:0 auto;
 }
+
+.blogposts{
+  padding-right: 2em;
+  padding-left: 2em;
+  padding-top: 2em;
+  font-size:1.5em;
+}
+
+
 .blog-post:hover{
-  background-color: grey;
+  background-color: #f6f6f6;
 }
 
 .post{

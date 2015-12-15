@@ -10,7 +10,6 @@ module.exports = function(app) {
     var comment = {comment: req.body.comment}
     var query = connection.query('INSERT INTO Comments SET ?',comment,function(err,result){
     });
-    // console.log(query.sql)
   })
 
 };
