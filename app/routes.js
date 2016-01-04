@@ -1,9 +1,9 @@
 
 module.exports = function(app) {
-  var connection = require('../db.js');
+  // var connection = require('../db.js');
 
   app.get('/', function(req, res) {
-    res.sendFile('./public/index.html');
+    res.sendFile('index.html');
   });
 
   app.post('/',function(req,res){
