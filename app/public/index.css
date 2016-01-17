@@ -3,7 +3,7 @@ h1{
 }
 
 .title{
-  padding-top: 0.25em;
+  padding-top: 0.3em;
   margin-left:2em;
   text-transform: capitalize;
 }
@@ -35,4 +35,12 @@ h1{
 .date{
   margin-left: 2em;
 }
+
+.search{
+/*  margin-left:auto;
+  margin-right:auto;
+  width:20%;*/
+  text-align: center;
+}
+
 
