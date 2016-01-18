@@ -1,10 +1,14 @@
+
   <h1>Scott's Blog</h1>
+  <div nav class="nav">
+  </div>
   <div class="search">
       <input type="text" data-ng-model="search">
   </div>
   <div class="blog">
     <div ng-controller="BlogController">
-      <div class="blog-post" id="{{blog.id}}" ng-repeat="blog in blogs | filter:search" ng-click="go('/post' + blog.id);addPop(blog)">
+
+      <div class="blog-post" id="{{blog.id}}" ng-repeat="blog in blogs | filter:search" ng-click="go('/post' + blog.id)">
 
         <div class="content">
           <p class="title"><strong>{{blog.title}}</strong></p>
@@ -14,4 +18,6 @@
       </div>
       </div>
     </div>
+    </div>
   </div>
+

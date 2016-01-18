@@ -1,5 +1,11 @@
 var blog = angular.module('blog',['ngRoute'])
 
+  angular.module('blog').directive('nav', function () {
+    return {
+        templateUrl: 'nav.html'
+    };
+});
+
     function BlogController($scope,$location,commentService){
       $scope.blogs =  [
         {id:1,
@@ -38,6 +44,10 @@ var blog = angular.module('blog',['ngRoute'])
 
       $scope.go = function(path){
         $location.path(path)
+      },
+
+      $scope.show = function(){
+        // this.hovering=true
       }
 
       // $scope.addPop = function(blog){
@@ -95,18 +105,6 @@ var blog = angular.module('blog',['ngRoute'])
     //   };
     // });
 
-    // angular.module('homeDirective',[])
-    // .controller('homeDirectiveController',['$scope','$location',function($scope){
-    //   $scope.phrases = {
-    //     one:"hello"
-    //   }
-
-    // }])
-    // .directive('goHome',function(){
-    //   return{
-    //     template:"{{phrases.one}}"
-    //   }
-    // })
 
 
 
