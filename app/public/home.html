@@ -4,13 +4,14 @@
   </div>
   <div class="blog">
     <div ng-controller="BlogController">
-      <div class="blog-post" id="{{blog.id}}" ng-repeat="blog in blogs | filter:search" ng-mouseOver="focus($event)">
+      <div class="blog-post" id="{{blog.id}}" ng-repeat="blog in blogs | filter:search" ng-click="go('/post' + blog.id);addPop(blog)">
+
         <div class="content">
-          <p class="title" ng-click="go('/post' + blog.id)">{{blog.title}}</p>
+          <p class="title"><strong>{{blog.title}}</strong></p>
+          <p></p>
           <p class="post">{{blog.post}}</p>
           <p class="date">{{blog.date | date}} : {{blog.subject}}</p>
       </div>
       </div>
     </div>
   </div>
-  <!-- <a href="#/post{{blog.id}}"> -->

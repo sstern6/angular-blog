@@ -1,0 +1,187 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'ngstorage' ]
+2 info using npm@2.10.1
+3 info using node@v0.12.4
+4 verbose node symlink /usr/local/bin/node
+5 verbose install initial load of /Users/scottstern/Desktop/angular-blog/package.json
+6 warn package.json angular-blog@0.0.0 No description
+7 warn package.json angular-blog@0.0.0 No repository field.
+8 warn package.json angular-blog@0.0.0 No README data
+9 warn package.json angular-blog@0.0.0 No license field.
+10 verbose installManyTop reading scoped package data from /Users/scottstern/Desktop/angular-blog/node_modules/body-parser/package.json
+11 verbose installManyTop reading scoped package data from /Users/scottstern/Desktop/angular-blog/node_modules/bootstrap-sass/package.json
+12 verbose installManyTop reading scoped package data from /Users/scottstern/Desktop/angular-blog/node_modules/bower/package.json
+13 verbose installManyTop reading scoped package data from /Users/scottstern/Desktop/angular-blog/node_modules/express/package.json
+14 verbose installManyTop reading scoped package data from /Users/scottstern/Desktop/angular-blog/node_modules/grunt/package.json
+15 verbose installManyTop reading scoped package data from /Users/scottstern/Desktop/angular-blog/node_modules/grunt-contrib-sass/package.json
+16 verbose installManyTop reading scoped package data from /Users/scottstern/Desktop/angular-blog/node_modules/grunt-contrib-watch/package.json
+17 verbose installManyTop reading scoped package data from /Users/scottstern/Desktop/angular-blog/node_modules/method-override/package.json
+18 verbose installManyTop reading scoped package data from /Users/scottstern/Desktop/angular-blog/node_modules/mysql/package.json
+19 verbose installManyTop reading scoped package data from /Users/scottstern/Desktop/angular-blog/node_modules/ng-storage/package.json
+20 verbose installManyTop reading scoped package data from /Users/scottstern/Desktop/angular-blog/node_modules/pg/package.json
+21 info package.json grunt-contrib-watch@0.6.1 No license field.
+22 info package.json grunt-contrib-sass@0.9.2 No license field.
+23 info package.json grunt@0.4.5 No license field.
+24 verbose readDependencies loading dependencies from /Users/scottstern/Desktop/angular-blog/package.json
+25 silly cache add args [ 'ngstorage', null ]
+26 verbose cache add spec ngstorage
+27 silly cache add parsed spec { raw: 'ngstorage',
+27 silly cache add   scope: null,
+27 silly cache add   name: 'ngstorage',
+27 silly cache add   rawSpec: '',
+27 silly cache add   spec: '*',
+27 silly cache add   type: 'range' }
+28 silly addNamed ngstorage@*
+29 verbose addNamed "*" is a valid semver range for ngstorage
+30 silly addNameRange { name: 'ngstorage', range: '*', hasData: false }
+31 silly mapToRegistry name ngstorage
+32 silly mapToRegistry using default registry
+33 silly mapToRegistry registry https://registry.npmjs.org/
+34 silly mapToRegistry uri https://registry.npmjs.org/ngstorage
+35 verbose addNameRange registry:https://registry.npmjs.org/ngstorage not in flight; fetching
+36 verbose request uri https://registry.npmjs.org/ngstorage
+37 verbose request no auth needed
+38 info attempt registry request try #1 at 16:03:02
+39 verbose request id aeb674245d5e90b0
+40 http request GET https://registry.npmjs.org/ngstorage
+41 http 200 https://registry.npmjs.org/ngstorage
+42 silly get cb [ 200,
+42 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+42 silly get     etag: '"3VK0QGS1VBC94Q6LXTM0FKCH"',
+42 silly get     'content-type': 'application/json',
+42 silly get     'cache-control': 'max-age=300',
+42 silly get     'content-length': '16332',
+42 silly get     'accept-ranges': 'bytes',
+42 silly get     date: 'Mon, 18 Jan 2016 00:03:03 GMT',
+42 silly get     via: '1.1 varnish',
+42 silly get     age: '0',
+42 silly get     connection: 'keep-alive',
+42 silly get     'x-served-by': 'cache-lax1427-LAX',
+42 silly get     'x-cache': 'MISS',
+42 silly get     'x-cache-hits': '0',
+42 silly get     'x-timer': 'S1453075383.123247,VS0,VE45',
+42 silly get     vary: 'Accept' } ]
+43 verbose get saving ngstorage to /Users/scottstern/.npm/registry.npmjs.org/ngstorage/.cache.json
+44 silly addNameRange number 2 { name: 'ngstorage', range: '*', hasData: true }
+45 silly addNameRange versions [ 'ngstorage',
+45 silly addNameRange   [ '0.3.3', '0.3.4', '0.3.5', '0.3.6', '0.3.8', '0.3.9', '0.3.10' ] ]
+46 silly addNamed ngstorage@0.3.10
+47 verbose addNamed "0.3.10" is a plain semver version for ngstorage
+48 silly mapToRegistry name ngstorage
+49 silly mapToRegistry using default registry
+50 silly mapToRegistry registry https://registry.npmjs.org/
+51 silly mapToRegistry uri https://registry.npmjs.org/ngstorage
+52 verbose addRemoteTarball https://registry.npmjs.org/ngstorage/-/ngstorage-0.3.10.tgz not in flight; adding
+53 verbose addRemoteTarball [ 'https://registry.npmjs.org/ngstorage/-/ngstorage-0.3.10.tgz',
+53 verbose addRemoteTarball   'e53bbb1015c31375ef56c61ad3dec25d14dc414e' ]
+54 info retry fetch attempt 1 at 16:03:02
+55 info attempt registry request try #1 at 16:03:02
+56 http fetch GET https://registry.npmjs.org/ngstorage/-/ngstorage-0.3.10.tgz
+57 http fetch 200 https://registry.npmjs.org/ngstorage/-/ngstorage-0.3.10.tgz
+58 silly fetchAndShaCheck shasum e53bbb1015c31375ef56c61ad3dec25d14dc414e
+59 verbose addTmpTarball /var/folders/21/jzc429sn7ss6zbwd717h7p9w0000gn/T/npm-5390-c7d1b20a/registry.npmjs.org/ngstorage/-/ngstorage-0.3.10.tgz not in flight; adding
+60 verbose addTmpTarball already have metadata; skipping unpack for ngstorage@0.3.10
+61 silly cache afterAdd ngstorage@0.3.10
+62 verbose afterAdd /Users/scottstern/.npm/ngstorage/0.3.10/package/package.json not in flight; writing
+63 verbose afterAdd /Users/scottstern/.npm/ngstorage/0.3.10/package/package.json written
+64 silly install resolved [ { name: 'ngstorage',
+64 silly install resolved     version: '0.3.10',
+64 silly install resolved     author: { name: 'Gias Kay Lee' },
+64 silly install resolved     licenses: [ [Object] ],
+64 silly install resolved     repository:
+64 silly install resolved      { type: 'git',
+64 silly install resolved        url: 'git+https://github.com/gsklee/ngStorage.git' },
+64 silly install resolved     main: 'ngStorage.js',
+64 silly install resolved     scripts: { test: 'grunt test' },
+64 silly install resolved     devDependencies:
+64 silly install resolved      { bower: '^1.x',
+64 silly install resolved        grunt: '^0.4.1',
+64 silly install resolved        'grunt-cli': '^0.1.11',
+64 silly install resolved        'grunt-contrib-uglify': '^0.x',
+64 silly install resolved        'grunt-karma': '^0.x',
+64 silly install resolved        karma: '^0.13.2',
+64 silly install resolved        'karma-chrome-launcher': '^0.2.0',
+64 silly install resolved        'karma-firefox-launcher': '^0.1.3',
+64 silly install resolved        'karma-mocha': '^0.2.0',
+64 silly install resolved        'karma-phantomjs-launcher': '^0.2.0',
+64 silly install resolved        mocha: '^2.2.4',
+64 silly install resolved        phantomjs: '^1.9.17' },
+64 silly install resolved     dependencies: {},
+64 silly install resolved     gitHead: '8ee59a08fe925563f0a1123180885b40ec3e8528',
+64 silly install resolved     description: 'ngStorage =========',
+64 silly install resolved     bugs: { url: 'https://github.com/gsklee/ngStorage/issues' },
+64 silly install resolved     homepage: 'https://github.com/gsklee/ngStorage#readme',
+64 silly install resolved     _id: 'ngstorage@0.3.10',
+64 silly install resolved     _shasum: 'e53bbb1015c31375ef56c61ad3dec25d14dc414e',
+64 silly install resolved     _from: 'ngstorage@*',
+64 silly install resolved     _npmVersion: '3.3.12',
+64 silly install resolved     _nodeVersion: '0.12.7',
+64 silly install resolved     _npmUser: { name: 'egilkh', email: 'egilkh@gmail.com' },
+64 silly install resolved     dist:
+64 silly install resolved      { shasum: 'e53bbb1015c31375ef56c61ad3dec25d14dc414e',
+64 silly install resolved        tarball: 'http://registry.npmjs.org/ngstorage/-/ngstorage-0.3.10.tgz' },
+64 silly install resolved     maintainers: [ [Object] ],
+64 silly install resolved     directories: {},
+64 silly install resolved     _resolved: 'https://registry.npmjs.org/ngstorage/-/ngstorage-0.3.10.tgz' } ]
+65 info install ngstorage@0.3.10 into /Users/scottstern/Desktop/angular-blog
+66 info installOne ngstorage@0.3.10
+67 verbose installOne of ngstorage to /Users/scottstern/Desktop/angular-blog not in flight; installing
+68 verbose lock using /Users/scottstern/.npm/_locks/ngstorage-fbd476065ede5b39.lock for /Users/scottstern/Desktop/angular-blog/node_modules/ngstorage
+69 silly install write writing ngstorage 0.3.10 to /Users/scottstern/Desktop/angular-blog/node_modules/ngstorage
+70 verbose unbuild node_modules/ngstorage
+71 silly gentlyRm /Users/scottstern/Desktop/angular-blog/node_modules/ngstorage is being purged from base /Users/scottstern/Desktop/angular-blog
+72 verbose gentlyRm don't care about contents; nuking /Users/scottstern/Desktop/angular-blog/node_modules/ngstorage
+73 verbose tar unpack /Users/scottstern/.npm/ngstorage/0.3.10/package.tgz
+74 verbose tar unpacking to /Users/scottstern/Desktop/angular-blog/node_modules/ngstorage
+75 silly gentlyRm /Users/scottstern/Desktop/angular-blog/node_modules/ngstorage is being purged
+76 verbose gentlyRm don't care about contents; nuking /Users/scottstern/Desktop/angular-blog/node_modules/ngstorage
+77 silly gunzTarPerm modes [ '755', '644' ]
+78 silly gunzTarPerm extractEntry package.json
+79 silly gunzTarPerm extractEntry README.md
+80 silly gunzTarPerm extractEntry LICENSE
+81 silly gunzTarPerm extractEntry ngStorage.js
+82 silly gunzTarPerm extractEntry ngStorage.min.js
+83 silly gunzTarPerm extractEntry CHANGELOG.md
+84 verbose write writing to /Users/scottstern/Desktop/angular-blog/node_modules/ngstorage/package.json
+85 info preinstall ngstorage@0.3.10
+86 verbose readDependencies loading dependencies from /Users/scottstern/Desktop/angular-blog/node_modules/ngstorage/package.json
+87 verbose readDependencies loading dependencies from /Users/scottstern/Desktop/angular-blog/node_modules/ngstorage/package.json
+88 silly install resolved []
+89 verbose about to build /Users/scottstern/Desktop/angular-blog/node_modules/ngstorage
+90 info build /Users/scottstern/Desktop/angular-blog/node_modules/ngstorage
+91 info linkStuff ngstorage@0.3.10
+92 silly linkStuff ngstorage@0.3.10 has /Users/scottstern/Desktop/angular-blog/node_modules as its parent node_modules
+93 verbose linkBins ngstorage@0.3.10
+94 verbose linkMans ngstorage@0.3.10
+95 verbose rebuildBundles ngstorage@0.3.10
+96 info install ngstorage@0.3.10
+97 info postinstall ngstorage@0.3.10
+98 verbose unlock done using /Users/scottstern/.npm/_locks/ngstorage-fbd476065ede5b39.lock for /Users/scottstern/Desktop/angular-blog/node_modules/ngstorage
+99 verbose validateInstall loading /Users/scottstern/Desktop/angular-blog/package.json for validation
+100 verbose stack Error: The package karma does not satisfy its siblings' peerDependencies requirements!
+100 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+100 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:267:7
+100 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:138:5
+100 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+100 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+100 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+100 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+100 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+100 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+100 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+101 verbose cwd /Users/scottstern/Desktop/angular-blog
+102 error Darwin 14.5.0
+103 error argv "node" "/usr/local/bin/npm" "install" "ngstorage"
+104 error node v0.12.4
+105 error npm  v2.10.1
+106 error code EPEERINVALID
+107 error peerinvalid The package karma does not satisfy its siblings' peerDependencies requirements!
+107 error peerinvalid Peer grunt-karma@0.7.3 wants karma@~0.12.0
+107 error peerinvalid Peer karma-html2js-preprocessor@0.1.0 wants karma@>=0.9
+107 error peerinvalid Peer karma-coffee-preprocessor@0.1.3 wants karma@>=0.9
+107 error peerinvalid Peer karma-mocha@0.1.10 wants karma@>=0.12.8
+107 error peerinvalid Peer karma-script-launcher@0.1.0 wants karma@>=0.9
+107 error peerinvalid Peer karma-phantomjs-launcher@0.1.4 wants karma@>=0.9
+107 error peerinvalid Peer karma-jasmine@0.1.6 wants karma@>=0.9
+107 error peerinvalid Peer karma-requirejs@0.2.3 wants karma@>=0.9
+108 verbose exit [ 1, true ]
