@@ -1,7 +1,9 @@
 var blog = angular.module('blog',['ngRoute'])
 
+// Basic Directive for home button
   angular.module('blog').directive('nav', function () {
     return {
+        restrict:'CE', //Class and Elements
         templateUrl: 'nav.html'
     };
 });
@@ -44,19 +46,7 @@ var blog = angular.module('blog',['ngRoute'])
 
       $scope.go = function(path){
         $location.path(path)
-      },
-
-      $scope.show = function(){
-        // this.hovering=true
       }
-
-      // $scope.addPop = function(blog){
-      //   console.log(blog.score);
-      //   blog.score += 1;
-      // }
-
-
-
     };
 
 
@@ -76,7 +66,8 @@ var blog = angular.module('blog',['ngRoute'])
     });
 
 
-    blog.service('commentService',function($http,$q){
+// Factory/Service for inclusion in a specifc controller to add functionality
+    blog.service('commentService',function($http){
 
       var addComment = function(comment){
         $http({
@@ -90,20 +81,6 @@ var blog = angular.module('blog',['ngRoute'])
         addComment:addComment
       });
     })
-
-    // blog.factory('CounterService',['$rootScope',function($rootScope){
-
-    //   function saveState() {
-    //     sessionStorage.CounterService = angular.toJson(service.state);
-    //   }
-    //   $rootScope.$on("savestate", saveState);
-    // }]);
-
-    // blog.run(function($rootScope) {
-    // window.onbeforeunload = function(event) {
-    //   $rootScope.$broadcast('savestate');
-    //   };
-    // });
 
 
 
