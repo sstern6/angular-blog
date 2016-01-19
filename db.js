@@ -4,15 +4,15 @@ var mysql      = require('mysql');
 var connection = mysql.createConnection({
     port: 'localhost',
     user: 'root',
-    password : '',
-    database : 'node',
+    password : 'Lfbet1233',
+    database : 'form',
     socketPath:'/tmp/mysql.sock'
 });
 
   connection.connect();
 
   //Table
-  connection.query("CREATE TABLE Comments (name VARCHAR(100), comment VARCHAR(100))",
+  connection.query("CREATE TABLE Comments (comment VARCHAR(100))",
   function(err, result){
       if(err) {
           console.log(err);

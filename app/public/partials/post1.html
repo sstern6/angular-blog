@@ -1,0 +1,18 @@
+<div nav class="nav">
+</div>
+   <div class="blogposts" ng-controller="BlogController">
+      <h1>First Post!</h1>
+
+      <p class="p1">Welcome to my blog!!! I have been focusing a lot on JavaScript lately so the following posts might be heavy in JS. Today I am going to talk about .sort().  Recently, on my job hunt I have been doing a lot of Algorithms as practice and to keep sharp.</p>
+
+      <p class="p2">There was one I was trying to do where I decided to use .sort()!  Unbeknownst to me, .sort() in JS analyzes each number by its unicode value, not its numeric value.  So for example, if you have an array = [1,10,2], that array is actually sorted according to the unicode values analyzed by the .sort() method.</p>
+
+      <p>In order to fix it, I needed to pass in a function comparing the values in the array</p>
+
+      <code>
+        a = [1,10,2]
+        a.sort(function(a,b){
+          return a-b;
+        });
+      </code>
+    </div>
